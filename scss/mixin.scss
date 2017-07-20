@@ -1,0 +1,33 @@
+//$gray : #ccc; 
+////переменная 
+//@mixin text-1{
+//    font-size: 30px;
+//    color: aquamarine;
+//    text-align: center;
+//}
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+
+@mixin input{
+            margin-top: 33px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color:  #eeeeee;
+            width: 333px;
+            height: 57px;
+            padding-left: 20px;
+            @include placeholder {
+                font-family: PTSerif;
+                color:  #b5b5b5;
+                font-size: 20px;/* Приближение из-за подстановки шрифтов */
+                font-weight: 400;
+                line-height: 25px;/* Приближение из-за подстановки шрифтов */
+                text-align: left;
+}
+}

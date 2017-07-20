@@ -1,0 +1,581 @@
+@charset "UTF-8";
+@font-face {
+  font-family: MonseBold;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: PTs;
+  src: url(../fonts/PT_Serif-Web-Regular.ttf) l;
+}
+
+@font-face {
+  font-family: quite;
+  src: url(../fonts/QuiteChocolatey.ttf);
+}
+
+@font-face {
+  font-family: cout;
+  src: url(../fonts/COUTURE-Bold.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.header__logo {
+  font-family: quite;
+  color: #ffffff;
+  font-size: 88.32px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  margin-left: 70px;
+  margin-top: 30px;
+  letter-spacing: 0;
+}
+
+.header__nav {
+  margin-left: 183px;
+}
+
+.header__nav__item {
+  font-family: MonseBold;
+  color: #ffffff;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 11px;
+  border-radius: 5px;
+  transform: 0.5s;
+  margin-right: 3px;
+}
+
+.header__nav__item:hover {
+  background-color: black;
+  border-radius: 5px;
+}
+
+.content__wrapper {
+  max-width: 1200px;
+  min-height: 688px;
+  background-image: url(../image/Layer%2013.jpg);
+}
+
+.content__wrapper__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 100px;
+}
+
+.content__wrapper__text__item-first {
+  font-family: MonseBold;
+  color: #130e27;
+  font-size: 86px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 50px;
+  margin-top: 270px;
+  letter-spacing: 1px;
+}
+
+.content__wrapper__text__item-second {
+  font-family: MonseBold;
+  color: white;
+  font-size: 90px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+}
+
+.content__wrapper__text__item-third {
+  font-family: PTS;
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 28px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  width: 500px;
+  margin-top: 24px;
+}
+
+.content__form {
+  position: absolute;
+  margin-left: 695px;
+  margin-top: -280px;
+}
+
+.content .form {
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 31.92px 6.08px rgba(137, 137, 137, 0.71);
+  width: 400px;
+  height: 492px;
+  padding-top: 28px;
+  text-align: center;
+}
+
+.content .form__text {
+  font-family: MonseBold;
+  color: #130e27;
+  font-size: 22px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  margin-right: 14px;
+}
+
+.content .form__name {
+  margin-top: 33px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  width: 333px;
+  height: 57px;
+  padding-left: 20px;
+}
+
+.content .form__name::-webkit-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__name:-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__name::-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__name:-ms-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__email {
+  margin-top: 33px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  width: 333px;
+  height: 57px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.content .form__email::-webkit-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__email:-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__email::-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__email:-ms-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__phone {
+  margin-top: 33px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  width: 333px;
+  height: 57px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.content .form__phone::-webkit-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__phone:-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__phone::-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__phone:-ms-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__country {
+  margin-top: 33px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  width: 333px;
+  height: 57px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.content .form__country::-webkit-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__country:-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__country::-moz-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__country:-ms-input-placeholder {
+  font-family: PTSerif;
+  color: #b5b5b5;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__checkbox {
+  border-radius: 5px;
+  background-color: #eeeeee;
+  width: 19px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+.content .form span {
+  font-family: PTs;
+  color: #130e27;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 25px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content .form__send {
+  border-radius: 5px;
+  background-color: #c62314;
+  width: 353px;
+  height: 57px;
+  margin-top: 15px;
+}
+
+.content .form .send {
+  font-family: MonseBold;
+  color: #ffffff;
+  font-size: 22px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+}
+
+.content__form__label {
+  display: block;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.content__services {
+  height: 482px;
+  width: 1200px;
+}
+
+.content__services__text {
+  font-family: Couture;
+  color: #c62314;
+  font-size: 50px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 80px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content__services__text-item {
+  font-family: Couture;
+  color: #130e27;
+  font-size: 50px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 80px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content__services__title {
+  margin-left: 100px;
+  margin-top: 45px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 97px;
+}
+
+.heart {
+  background-image: url(../image/Shape%20108.png);
+  width: 163px;
+  height: 142px;
+  margin-left: 10px;
+}
+
+.wrench {
+  background-image: url(../image/Shape%20127.png);
+  width: 137px;
+  height: 137px;
+  margin-left: 30px;
+}
+
+.bulb {
+  background-image: url(../image/Shape%20106.png);
+  width: 116px;
+  height: 155px;
+  margin-left: 30px;
+}
+
+.gps {
+  background-image: url(../image/Shape%2097.png);
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+}
+
+.text-wrapper {
+  font-family: PTSerif;
+  color: #161616;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 28px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+
+.content__our-story {
+  background-color: #130e27;
+  width: 1200px;
+  height: 123px;
+}
+
+.text-story {
+  font-family: PTs;
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 28px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.story {
+  border-radius: 5px;
+  background-color: #c62314;
+  width: 269px;
+  height: 64px;
+  border: 0;
+  margin-left: 826px;
+}
+
+.text-monse {
+  font-family: MonseBold;
+  color: #ffffff;
+  font-size: 22px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 28px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+
+.wrench-text {
+  width: 200px;
+  text-align: center;
+}
+
+.text-bulb {
+  width: 180px;
+  text-align: center;
+}
+
+.text-gps {
+  width: 170px;
+  text-align: center;
+}
+
+.heart-text {
+  width: 180px;
+  text-align: center;
+}
+
+.content__services__element-heart {
+  margin-left: 30px;
+}
+
+.content__services__element-wrench {
+  margin-left: 70px;
+}
+
+.content__services__element-bulb {
+  margin-left: 70px;
+}
+
+.content__services__element-gps {
+  margin-left: 100px;
+}
+
+.content__pricing {
+  background-color: #efefef;
+  width: 1200px;
+  height: 537px;
+}
+
+.content__pricing__text1 {
+  font-family: MonseBold;
+  color: #c62314;
+  font-size: 60px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 80px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.content__pricing__item {
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 318px;
+  height: 389px;
+  display: inline-block;
+}
